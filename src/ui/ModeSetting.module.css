@@ -1,0 +1,59 @@
+.modeSetting {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.modeSetting svg {
+  cursor: pointer;
+  font-size: 2.2rem;
+}
+
+.modeSetting .modeThemeBar {
+  height: 20px;
+  width: 12rem;
+  background-color: var(--color-grey-800);
+  position: relative;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.modeSetting .modeThemeBar:global(.dark) {
+  justify-content: end;
+}
+
+.modeSetting .modeThemeBar:global(.light) {
+  justify-content: start;
+}
+
+.modeSetting .modeThemeBar .modeThemeBarBall {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-grey-200);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  cursor: pointer;
+}

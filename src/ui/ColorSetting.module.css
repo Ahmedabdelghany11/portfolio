@@ -1,0 +1,36 @@
+.colorSetting {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.colorSetting .colorSettingOption {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 0 2px 1px var(--color-grey-500);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition:var(--main-transition);
+  -webkit-transition:var(--main-transition);
+  -moz-transition:var(--main-transition);
+  -ms-transition:var(--main-transition);
+  -o-transition:var(--main-transition);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.colorSetting .colorSettingOption:hover,
+.colorSetting .colorSettingOption:global(.active) {
+  opacity: 1;
+}
+.colorSetting .colorSettingOption:global(.active) {
+  box-shadow: 0 0 2px 1px #000;
+}

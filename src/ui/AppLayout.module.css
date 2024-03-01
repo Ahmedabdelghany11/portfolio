@@ -1,0 +1,12 @@
+.appLayout {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.appLayout .wrappedContent {
+  width: 100%;
+  height: 100%;
+  padding: 8rem 0;
+  position: relative;
+}

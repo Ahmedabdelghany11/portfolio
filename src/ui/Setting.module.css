@@ -1,0 +1,50 @@
+.settingContainer {
+  width: 22rem;
+  padding: 2rem;
+  background-color: var(--color-grey-300);
+  box-shadow: 0 0 2px 1px var(--color-grey-500);
+  position: fixed;
+  right: -22.2rem;
+  bottom: 100px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  border-radius: 6px 6px 6px 0;
+  -webkit-border-radius: 6px 6px 6px 0;
+  -moz-border-radius: 6px 6px 6px 0;
+  -ms-border-radius: 6px 6px 6px 0;
+  -o-border-radius: 6px 6px 6px 0;
+  z-index: 9999;
+}
+
+.settingContainer:global(.open) {
+  right: 0;
+}
+
+.settingContainer .settingIconBox {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--color-grey-300);
+  box-shadow: 0 0 2px 1px var(--color-grey-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  padding: 5px;
+  position: absolute;
+  left: -4.2rem;
+  bottom: 0;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -ms-border-radius: 6px 0 0 6px;
+  -o-border-radius: 6px 0 0 6px;
+  cursor: pointer;
+}

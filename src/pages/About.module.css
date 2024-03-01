@@ -1,0 +1,87 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about .aboutContent {
+  width: 70%;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .about .aboutContent,
+  .about .aboutInfo {
+    width: 90%;
+  }
+}
+
+.about .aboutInfo {
+  width: 70%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.about .aboutInfo .aboutInfoBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+}
+
+.about .aboutInfo .aboutInfoBox:not(:last-of-type)::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-grey-500);
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+}
+
+.about .aboutInfo .aboutInfoBox .aboutInfoBoxTitle {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5rem;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--theme-color);
+  transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.about .aboutInfo .aboutInfoBox .aboutInfoBoxTitle svg {
+  font-size: 2rem;
+}
+
+.about .aboutInfo .aboutInfoBox .aboutInfoBoxValue {
+  flex: 1;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}

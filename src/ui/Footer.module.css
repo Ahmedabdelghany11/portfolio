@@ -1,0 +1,97 @@
+.footer {
+  padding: 4rem 0 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+  box-shadow: 8px 0 4px 2px var(--color-grey-500);
+  transition: var(--main-transition);
+}
+
+.footer .socialLinksContainer {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+  transition: var(--main-transition);
+}
+
+.footer .socialLinksContainer .socialLink {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #efefef;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+
+.footer .socialLinksContainer .socialLink:global(.gmail) {
+  background-color: #db4437;
+  box-shadow: 0 0 4px 2px #db4437;
+}
+
+.footer .socialLinksContainer .socialLink:global(.facebook) {
+  background-color: #1877f2;
+  box-shadow: 0 0 4px 2px #1877f2;
+}
+
+.footer .socialLinksContainer .socialLink:global(.linkedin) {
+  background-color: #0a66c2;
+  box-shadow: 0 0 4px 2px #0a66c2;
+}
+
+.footer .socialLinksContainer .socialLink:global(.whatsapp) {
+  background-color: #25d366;
+  box-shadow: 0 0 4px 2px #25d366;
+}
+
+.footer .socialLinksContainer .socialLink:global(.github) {
+  background-color: #000;
+  box-shadow: 0 0 4px 2px #000;
+}
+
+.footer .socialLinksContainer .socialLink:hover {
+  transform: scale(1.1);
+}
+
+.footer .socialLinksContainer .socialLink svg {
+  font-size: 2rem;
+}
+
+.footer .copyright {
+  width: 100%;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 0.6rem;
+}
+
+.footer .copyright::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-radius: 1px;
+  background-color: var(--color-grey-400);
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+}
