@@ -256,11 +256,11 @@ function Projects() {
               <span className={styles.projectInfoTechnology}>
                 React-Router-Dom
               </span>
-              <span className={styles.projectInfoTechnology}>Css Modules</span>
+              <span className={styles.projectInfoTechnology}>CSS Modules</span>
             </div>
             <div className={styles.projectInfoLinksContainer}>
               <Link
-                to="https://github.com/mahmoudeldeeb00/AnimalHealthCare"
+                to="https://github.com/Ahmedabdelghany11/portfolio"
                 target="_blank"
                 className={`${styles.projectInfoLink} github`}
               >

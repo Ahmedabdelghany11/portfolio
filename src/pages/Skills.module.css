@@ -1,0 +1,184 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.skills .skillsContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.skills .skillsContainer .skillBox {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  position: relative;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skills .skillsContainer .skillBox:global(.html) {
+  background-color: #e34c26;
+  box-shadow: 0 0 2px 2px #e34c26;
+}
+
+.skills .skillsContainer .skillBox:global(.css) {
+  background-color: #264de4;
+  box-shadow: 0 0 4px 2px #264de4;
+}
+
+.skills .skillsContainer .skillBox:global(.tailwind) {
+  background-color: #38BDF8;
+  box-shadow: 0 0 4px 2px #38BDF8;
+}
+
+.skills .skillsContainer .skillBox:global(.bootstrap) {
+  background-color: #7952B3;
+  box-shadow: 0 0 4px 2px #7952B3;
+}
+
+.skills .skillsContainer .skillBox:global(.sass) {
+  background-color: #CF649A;
+  box-shadow: 0 0 4px 2px #CF649A;
+}
+
+.skills .skillsContainer .skillBox:global(.javascript) {
+  color: #000;
+  background-color: #f0db4f;
+  box-shadow: 0 0 4px 2px #f0db4f;
+}
+
+.skills .skillsContainer .skillBox:global(.jquery) {
+  background-color: #0769ad;
+  box-shadow: 0 0 4px 2px #0769ad;
+}
+
+.skills .skillsContainer .skillBox:global(.react) {
+  background-color: #087EA4;
+  box-shadow: 0 0 4px 2px #087EA4;
+}
+
+.skills .skillsContainer .skillBox:global(.redux) {
+  background-color: #764ABC;
+  box-shadow: 0 0 4px 2px #764ABC;
+}
+
+.skills .skillsContainer .skillBox:global(.github) {
+  background-color: #000;
+  box-shadow: 0 0 4px 2px #000;
+}
+
+.skills .certificatesContainer {
+  width: 100%;
+  max-height: 100rem;
+  position: relative;
+  margin-top: 8rem;
+  display: flex;
+  align-items: start;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .skills .certificatesContainer {
+    flex-direction: column;
+  }
+}
+
+.skills .certificatesContainer .certificateNamesContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.skills .certificatesContainer .certificateNamesContainer .certificateName {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: var(--color-grey-700);
+  color: var(--color-grey-100);
+  box-shadow: 0 0 2px 2px var(--color-grey-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  cursor: pointer;
+}
+
+.skills .certificatesContainer .certificateNamesContainer .certificateName:global(.open) {
+  background-color: var(--theme-color);
+  box-shadow: 0 0 2px 2px var(--theme-color);
+  color: #fff;
+}
+
+.skills .certificatesContainer .certificateImageContainer {
+  width: 55%;
+  display: flex;
+  overflow: hidden;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-shadow: 0 0 2px 4px var(--color-grey-500);
+  position: relative;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.skills .certificatesContainer .certificateImageContainer img {
+  max-width: 100%;
+  object-fit: cover;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+@media screen and (max-width: 767px) {
+
+  .skills .certificatesContainer .certificateNamesContainer,
+  .skills .certificatesContainer .certificateImageContainer {
+    width: 100%;
+  }
+}

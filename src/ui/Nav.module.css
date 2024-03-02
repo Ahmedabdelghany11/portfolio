@@ -3,7 +3,7 @@ nav {
   padding: 1.5rem;
   position: fixed;
   top: 0;
-  left: 1.5rem;
+  left: 0;
   background-color: var(--overlay-color);
   z-index: 99999;
 }
