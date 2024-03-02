@@ -176,7 +176,9 @@
 }
 
 @media screen and (max-width: 767px) {
-
+  .skills .certificatesContainer .certificateNamesContainer {
+    order: 2;
+  }
   .skills .certificatesContainer .certificateNamesContainer,
   .skills .certificatesContainer .certificateImageContainer {
     width: 100%;
