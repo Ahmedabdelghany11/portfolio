@@ -3,17 +3,26 @@ import styles from "./Projects.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { HiExternalLink } from "react-icons/hi";
+
 import shoppyImg from "/Shoppy.png";
 import todoImg from "/Todo.png";
 import chefImg from "/YourChef.png";
 import curaImg from "/Cura.png";
 import portfolioImg from "/Portfolio.png";
-import { FaGithub } from "react-icons/fa6";
-import { Link } from "react-router-dom";
-import { HiExternalLink } from "react-icons/hi";
+
+const images = {
+  shoppyImg,
+  todoImg,
+  chefImg,
+  curaImg,
+  portfolioImg,
+};
 
 function Projects() {
-  const [activeSlide, setActiveSlide] = useState("shoppy");
+  const [activeSlide, setActiveSlide] = useState(images.shoppyImg);
 
   const handleSlideChange = (swiper) => {
     const activeIndex = swiper.activeIndex;
@@ -45,8 +54,8 @@ function Projects() {
         className={`${styles.projectsContainer} swiper-container`}
       >
         <SwiperSlide
-          className={`${styles.projectBox} swiper-slide ${activeSlide === "shoppy" ? "active" : ""}`}
-          data_slide="shoppy"
+          className={`${styles.projectBox} swiper-slide ${activeSlide === images.shoppyImg ? "active" : ""}`}
+          data_slide={images.shoppyImg}
         >
           <div className={`${styles.projectImgContainer}`}>
             <img src={shoppyImg} alt="Shoopy" title="Shoopy" />
@@ -99,8 +108,8 @@ function Projects() {
           </div>
         </SwiperSlide>
         <SwiperSlide
-          className={`${styles.projectBox} swiper-slide ${activeSlide === "yourChef" ? "active" : ""}`}
-          data_slide="yourChef"
+          className={`${styles.projectBox} swiper-slide ${activeSlide === images.chefImg ? "active" : ""}`}
+          data_slide={images.chefImg}
         >
           <div className={`${styles.projectImgContainer}`}>
             <img src={chefImg} alt="Your Chef" title="Your Chef" />
@@ -149,8 +158,8 @@ function Projects() {
           </div>
         </SwiperSlide>
         <SwiperSlide
-          className={`${styles.projectBox} swiper-slide ${activeSlide === "todo" ? "active" : ""}`}
-          data_slide="todo"
+          className={`${styles.projectBox} swiper-slide ${activeSlide === images.todoImg ? "active" : ""}`}
+          data_slide={images.todoImg}
         >
           <div className={`${styles.projectImgContainer}`}>
             <img src={todoImg} alt="To do list" title="To do list" />
@@ -194,8 +203,8 @@ function Projects() {
           </div>
         </SwiperSlide>
         <SwiperSlide
-          className={`${styles.projectBox} swiper-slide ${activeSlide === "cura" ? "active" : ""}`}
-          data_slide="cura"
+          className={`${styles.projectBox} swiper-slide ${activeSlide === images.curaImg ? "active" : ""}`}
+          data_slide={images.curaImg}
         >
           <div className={`${styles.projectImgContainer}`}>
             <img src={curaImg} alt="Cura" title="Cura" />
@@ -237,8 +246,8 @@ function Projects() {
           </div>
         </SwiperSlide>
         <SwiperSlide
-          className={`${styles.projectBox} swiper-slide ${activeSlide === "portfolio" ? "active" : ""}`}
-          data_slide="portfolio"
+          className={`${styles.projectBox} swiper-slide ${activeSlide === images.portfolioImg ? "active" : ""}`}
+          data_slide={images.portfolioImg}
         >
           <div className={`${styles.projectImgContainer}`}>
             <img src={portfolioImg} alt="Portfolio" title="Portfolio" />
