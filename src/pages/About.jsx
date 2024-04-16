@@ -106,11 +106,11 @@ function About() {
               Gmail:
             </span>
             <a
-              href="mailto:ahmedabdoelhewala211@gmail.com"
+              href="mailto:ahmed.abdelghany1211@gmail.com"
               className={styles.aboutInfoBoxValue}
               style={{ cursor: "pointer" }}
             >
-              ahmedabdoelhewala211@gmail.com
+              ahmed.abdelghany1211@gmail.com
             </a>
           </div>
         </div>

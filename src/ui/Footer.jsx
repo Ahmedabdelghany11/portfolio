@@ -14,7 +14,7 @@ function Footer() {
       <div className={styles.socialLinksContainer}>
         <Link
           className={`${styles.socialLink} gmail`}
-          to="mailto:ahmedabdoelhewala211@gmail.com"
+          to="mailto:ahmed.abdelghany1211@gmail.com"
         >
           <FaGooglePlusG />
         </Link>
