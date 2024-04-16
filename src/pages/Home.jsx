@@ -8,7 +8,7 @@ function Home() {
     <Container>
       <div className={styles.home}>
         <div className={styles.infoContainer}>
-          <h1 className={styles.heading}>Ahmed Abd El-Ghany</h1>
+          <h1 className={styles.heading}>Ahmed </h1>
           <span className={styles.jobTitle}>Fron-End Developer | React.js</span>
           <div className={styles.about}>
             <p>{`A junior front-end developer using React.js.`}</p>
