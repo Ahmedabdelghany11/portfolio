@@ -12,7 +12,7 @@ import todoImg from "/Todo.png";
 import chefImg from "/YourChef.png";
 import curaImg from "/Cura.png";
 import portfolioImg from "/Portfolio.png";
-import invoiceImg from "/Invoice.jpg";
+import invoiceImg from "/Invoice.png";
 
 const images = {
   shoppyImg,
