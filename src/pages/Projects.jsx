@@ -12,6 +12,7 @@ import todoImg from "/Todo.png";
 import chefImg from "/YourChef.png";
 import curaImg from "/Cura.png";
 import portfolioImg from "/Portfolio.png";
+import invoiceImg from "/Invoice.jpg";
 
 const images = {
   shoppyImg,
@@ -19,6 +20,7 @@ const images = {
   chefImg,
   curaImg,
   portfolioImg,
+  invoiceImg,
 };
 
 function Projects() {
@@ -53,6 +55,7 @@ function Projects() {
         }}
         className={`${styles.projectsContainer} swiper-container`}
       >
+        {/* Shoppy Slide */}
         <SwiperSlide
           className={`${styles.projectBox} swiper-slide ${activeSlide === images.shoppyImg ? "active" : ""}`}
           data_slide={images.shoppyImg}
@@ -107,6 +110,8 @@ function Projects() {
             </div>
           </div>
         </SwiperSlide>
+
+        {/* Your Chef Slide */}
         <SwiperSlide
           className={`${styles.projectBox} swiper-slide ${activeSlide === images.chefImg ? "active" : ""}`}
           data_slide={images.chefImg}
@@ -157,6 +162,8 @@ function Projects() {
             </div>
           </div>
         </SwiperSlide>
+
+        {/* Todo Slide */}
         <SwiperSlide
           className={`${styles.projectBox} swiper-slide ${activeSlide === images.todoImg ? "active" : ""}`}
           data_slide={images.todoImg}
@@ -202,6 +209,8 @@ function Projects() {
             </div>
           </div>
         </SwiperSlide>
+
+        {/* Cura Slide */}
         <SwiperSlide
           className={`${styles.projectBox} swiper-slide ${activeSlide === images.curaImg ? "active" : ""}`}
           data_slide={images.curaImg}
@@ -245,6 +254,8 @@ function Projects() {
             </div>
           </div>
         </SwiperSlide>
+
+        {/* Portfolio Slide */}
         <SwiperSlide
           className={`${styles.projectBox} swiper-slide ${activeSlide === images.portfolioImg ? "active" : ""}`}
           data_slide={images.portfolioImg}
@@ -277,6 +288,54 @@ function Projects() {
                 Repo
               </Link>
               <Link to="/" className={`${styles.projectInfoLink} host`}>
+                <HiExternalLink />
+                Preview
+              </Link>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        {/* Invoice Slide */}
+        <SwiperSlide
+          className={`${styles.projectBox} swiper-slide ${activeSlide === images.invoiceImg ? "active" : ""}`}
+          data_slide={images.invoiceImg}
+        >
+          <div className={`${styles.projectImgContainer}`}>
+            <img src={invoiceImg} alt="Invoice" title="Invoice" />
+          </div>
+          <div className={styles.projectInfoContainer}>
+            <h3 className={styles.projectInfoHeading}>Invoice</h3>
+            <p className={styles.projectInfoDescription}>
+              {`Application to handle the payment of the invoices and track it with its status and items in the bill and the information of the sender and the client, and everything stored in a local DB file.`}
+            </p>
+            <div className={styles.projectInfoTechnologiesContainer}>
+              <span className={styles.projectInfoTechnology}>javaScript</span>
+              <span
+                className={styles.projectInfoTechnology}
+              >{`React.js (Vite)`}</span>
+              <span className={styles.projectInfoTechnology}>
+                React-Router-Dom
+              </span>
+              <span className={styles.projectInfoTechnology}>
+                React-hook-form
+              </span>
+              <span className={styles.projectInfoTechnology}>
+                Styled Components
+              </span>
+            </div>
+            <div className={styles.projectInfoLinksContainer}>
+              <Link
+                to="https://github.com/Ahmedabdelghany11/Invoice"
+                target="_blank"
+                className={`${styles.projectInfoLink} github`}
+              >
+                <FaGithub />
+                Repo
+              </Link>
+              <Link
+                to="https://incoice.netlify.app/"
+                className={`${styles.projectInfoLink} host`}
+              >
                 <HiExternalLink />
                 Preview
               </Link>
