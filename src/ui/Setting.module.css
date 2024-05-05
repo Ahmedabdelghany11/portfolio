@@ -5,7 +5,7 @@
   box-shadow: 0 0 2px 1px var(--color-grey-500);
   position: fixed;
   right: -22.2rem;
-  bottom: 100px;
+  bottom: 16vh;
   transition: var(--main-transition);
   -webkit-transition: var(--main-transition);
   -moz-transition: var(--main-transition);
