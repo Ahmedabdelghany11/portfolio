@@ -17,7 +17,7 @@ import yengzImg from "/Yengz.png";
 import tamemImg from "/Tamem.png";
 import romozImg from "/Romoz.png";
 import councilImg from "/Council.png";
-import ridelImg from "Ride.png";
+import ridelImg from "/Ride.png";
 
 const images = {
   shoppyImg,
