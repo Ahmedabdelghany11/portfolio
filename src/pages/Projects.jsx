@@ -1,7 +1,9 @@
 import Heading from "../ui/Heading";
 import styles from "./Projects.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
+import "swiper/swiper-bundle.css";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
@@ -55,6 +57,8 @@ function Projects() {
         slidesPerView={2}
         initialSlide={0}
         onSlideChange={handleSlideChange}
+        modules={[Autoplay, EffectFade]}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
