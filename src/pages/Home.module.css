@@ -56,19 +56,23 @@
 }
 
 .home .infoContainer .heading::after {
-    content: "";
-    width: 3px;
-    height: 100%;
-    background-color: var(--color-grey-500);
-    position: absolute;
-    top: 0;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
-    animation: typingCursor 3.5s steps(40, end) alternate infinite, blink-caret 0.5s step-end infinite;
-    -webkit-animation: typingCursor 3.5s steps(40, end) alternate infinite, blink-caret 0.5s step-end infinite;
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: var(--color-grey-500);
+  position: absolute;
+  top: 0;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  animation:
+    typingCursor 3.5s steps(40, end) alternate infinite,
+    blink-caret 0.5s step-end infinite;
+  -webkit-animation:
+    typingCursor 3.5s steps(40, end) alternate infinite,
+    blink-caret 0.5s step-end infinite;
 }
 
 .home .infoContainer .jobTitle {
@@ -90,6 +94,13 @@
   bottom: -1.5rem;
   left: 0;
   background-color: var(--color-grey-500);
+}
+
+.home .infoContainer .jobTitle a {
+  font-size: 1.4rem;
+  color: var(--theme-color);
+  position: relative;
+  font-weight: bold;
 }
 
 .home .infoContainer .about {
@@ -152,11 +163,11 @@
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 
   to {
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -171,7 +182,8 @@
 }
 
 @keyframes blink-caret {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {

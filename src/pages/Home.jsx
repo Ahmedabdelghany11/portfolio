@@ -9,7 +9,15 @@ function Home() {
       <div className={styles.home}>
         <div className={styles.infoContainer}>
           <h1 className={styles.heading}>Ahmed Abd El-Ghany</h1>
-          <span className={styles.jobTitle}>Fron-End Developer | React.js</span>
+          <span className={styles.jobTitle}>
+            A Junior Fron-End Developer | React.js at{" "}
+            <Link
+              to="https://www.linkedin.com/company/namitec/"
+              target="_blank"
+            >
+              Nami
+            </Link>
+          </span>
           <div className={styles.about}>
             <p>{`A junior front-end developer using React.js.`}</p>
             <p>

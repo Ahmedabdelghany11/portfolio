@@ -50,20 +50,20 @@
   display: flex;
   align-items: start;
   transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
 }
 
 .projects .projectsContainer .projectBox .projectImgContainer img {
   width: 100%;
   height: 100%;
   transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
 }
 
 .projects .projectsContainer .projectBox .projectInfoContainer {
@@ -77,24 +77,30 @@
   top: 110%;
   left: 0;
   transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    gap: 5rem;
-    overflow-y: auto;
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 5rem;
+  overflow-y: auto;
 }
 
-.projects .projectsContainer .projectBox .projectInfoContainer::-webkit-scrollbar {
+.projects
+  .projectsContainer
+  .projectBox
+  .projectInfoContainer::-webkit-scrollbar {
   width: 0;
   display: none;
 }
 
-.projects .projectsContainer .projectBox .projectInfoContainer::-webkit-scrollbar-horizontal {
+.projects
+  .projectsContainer
+  .projectBox
+  .projectInfoContainer::-webkit-scrollbar-horizontal {
   height: 0;
 }
 
@@ -102,15 +108,35 @@
   top: 0;
 }
 
-.projects .projectsContainer .projectBox:hover .projectInfoContainer .projectInfoHeading {
+.projects
+  .projectsContainer
+  .projectBox:hover
+  .projectInfoContainer
+  .projectInfoHeading {
   font-size: 2.6rem;
   text-align: center;
   position: relative;
   filter: drop-shadow(0 0 1px var(--color-grey-500));
   -webkit-filter: drop-shadow(0 0 1px var(--color-grey-500));
+  line-height: 1;
 }
 
-.projects .projectsContainer .projectBox:hover .projectInfoContainer .projectInfoHeading::before {
+.projects
+  .projectsContainer
+  .projectBox:hover
+  .projectInfoContainer
+  .projectInfoHeading
+  span {
+  font-size: 1.6rem;
+  text-align: center;
+  position: relative;
+}
+
+.projects
+  .projectsContainer
+  .projectBox:hover
+  .projectInfoContainer
+  .projectInfoSubheading::before {
   content: "";
   width: 200%;
   height: 1px;
@@ -130,13 +156,46 @@
   -o-transform: translateX(-50%);
 }
 
-.projects .projectsContainer .projectBox:hover .projectInfoContainer .projectInfoDescription {
+.projects
+  .projectsContainer
+  .projectBox:hover
+  .projectInfoContainer
+  .projectInfoSubheading {
+  font-size: 1.8rem;
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+.projects
+  .projectsContainer
+  .projectBox:hover
+  .projectInfoContainer
+  .projectInfoSubheading
+  span {
+  font-size: 1.4rem;
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+.projects
+  .projectsContainer
+  .projectBox:hover
+  .projectInfoContainer
+  .projectInfoDescription {
   line-height: 1.4;
   font-size: 1.6rem;
   width: 90%;
+  text-wrap: balance;
+  text-align: center;
 }
 
-.projects .projectsContainer .projectBox:hover .projectInfoContainer .projectInfoTechnologiesContainer {
+.projects
+  .projectsContainer
+  .projectBox:hover
+  .projectInfoContainer
+  .projectInfoTechnologiesContainer {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
@@ -146,7 +205,12 @@
   position: relative;
 }
 
-.projects .projectsContainer .projectBox:hover .projectInfoContainer .projectInfoTechnologiesContainer .projectInfoTechnology {
+.projects
+  .projectsContainer
+  .projectBox:hover
+  .projectInfoContainer
+  .projectInfoTechnologiesContainer
+  .projectInfoTechnology {
   padding: 8px 16px;
   background-color: var(--theme-color);
   box-shadow: 0 0 2px 1px var(--theme-color);
@@ -162,7 +226,11 @@
   -o-border-radius: 8px;
 }
 
-.projects .projectsContainer .projectBox:hover .projectInfoContainer .projectInfoLinksContainer {
+.projects
+  .projectsContainer
+  .projectBox:hover
+  .projectInfoContainer
+  .projectInfoLinksContainer {
   width: 90%;
   display: flex;
   justify-content: center;
@@ -170,7 +238,12 @@
   gap: 6rem;
   position: relative;
 }
-.projects .projectsContainer .projectBox:hover .projectInfoContainer .projectInfoLinksContainer .projectInfoLink {
+.projects
+  .projectsContainer
+  .projectBox:hover
+  .projectInfoContainer
+  .projectInfoLinksContainer
+  .projectInfoLink {
   padding: 8px 16px;
   flex: 1;
   background-color: var(--color-grey-700);
@@ -178,19 +251,25 @@
   color: var(--color-grey-100);
   font-size: 1.6rem;
   font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    font-size: 1.4rem;
-    font-weight: bold;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
-.projects .projectsContainer .projectBox:hover .projectInfoContainer .projectInfoLinksContainer .projectInfoLink svg {
+.projects
+  .projectsContainer
+  .projectBox:hover
+  .projectInfoContainer
+  .projectInfoLinksContainer
+  .projectInfoLink
+  svg {
   font-size: 1.8rem;
 }
