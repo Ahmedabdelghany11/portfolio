@@ -65,6 +65,7 @@ function Home() {
             <p>{`Have very good skills in Front-End Development in general, and especially in Responsive Web Designs, JavaScript, and its library React.`}</p>
             <p>{`Always have a lot of passion, ambition, and enthusiasm for software engineering, and seeking to become a professional MERN stack developer, and looking for every opportunity to achieve my goals`}</p>
           </div>
+
           <Link to="/about" className={styles.buttonLink}>
             Read more
           </Link>

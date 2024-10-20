@@ -46,9 +46,6 @@ function Footer() {
           <FaWhatsapp />
         </Link>
       </div>
-      <div className={styles.copyright}>
-        Copyright &copy; 2024, Ahmed Abd El-Ghany.
-      </div>
     </div>
   );
 }

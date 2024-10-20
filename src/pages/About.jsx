@@ -11,6 +11,7 @@ import Heading from "../ui/Heading";
 import { FaGooglePlusG, FaEarthAfrica } from "react-icons/fa6";
 import { FaLanguage } from "react-icons/fa";
 import Container from "../ui/Container";
+import Footer from "../ui/Footer";
 
 function About() {
   return (
@@ -115,6 +116,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Footer />
     </Container>
   );
 }

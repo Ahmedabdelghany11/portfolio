@@ -1,17 +1,15 @@
 .footer {
-  padding: 4rem 0 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 4rem;
   position: relative;
-  box-shadow: 8px 0 4px 2px var(--color-grey-500);
   transition: var(--main-transition);
+  margin-top: 24px;
 }
 
 .footer .socialLinksContainer {
   width: 100%;
-  padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,27 +41,27 @@
 
 .footer .socialLinksContainer .socialLink:global(.gmail) {
   background-color: #db4437;
-  box-shadow: 0 0 4px 2px #db4437;
+  box-shadow: 0 0 2px 1px #db4437;
 }
 
 .footer .socialLinksContainer .socialLink:global(.facebook) {
   background-color: #1877f2;
-  box-shadow: 0 0 4px 2px #1877f2;
+  box-shadow: 0 0 2px 1px #1877f2;
 }
 
 .footer .socialLinksContainer .socialLink:global(.linkedin) {
   background-color: #0a66c2;
-  box-shadow: 0 0 4px 2px #0a66c2;
+  box-shadow: 0 0 2px 1px #0a66c2;
 }
 
 .footer .socialLinksContainer .socialLink:global(.whatsapp) {
   background-color: #25d366;
-  box-shadow: 0 0 4px 2px #25d366;
+  box-shadow: 0 0 2px 1px #25d366;
 }
 
 .footer .socialLinksContainer .socialLink:global(.github) {
   background-color: #000;
-  box-shadow: 0 0 4px 2px #000;
+  box-shadow: 0 0 2px 1px #000;
 }
 
 .footer .socialLinksContainer .socialLink:hover {

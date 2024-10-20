@@ -1,7 +1,6 @@
 import Nav from "./Nav";
 import styles from "./AppLayout.module.css";
 import Setting from "./Setting";
-import Footer from "./Footer";
 
 function AppLayout({ children }) {
   return (
@@ -9,7 +8,6 @@ function AppLayout({ children }) {
       <Nav />
       <Setting />
       <div className={styles.wrappedContent}>{children}</div>
-      <Footer />
     </div>
   );
 }
