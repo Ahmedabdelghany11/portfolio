@@ -28,51 +28,15 @@
 
 .home .infoContainer .heading {
   color: var(--theme-color);
-  max-width: fit-content;
+  width: 100%;
   overflow: hidden;
-  white-space: nowrap;
+  gap: 0.5rem;
   position: relative;
   transition: var(--main-transition);
   -webkit-transition: var(--main-transition);
   -moz-transition: var(--main-transition);
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
-}
-
-.home .infoContainer .heading::before {
-  content: "";
-  height: 100%;
-  background-color: var(--color-grey-100);
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: var(--main-transition);
-  -webkit-transition: var(--main-transition);
-  -moz-transition: var(--main-transition);
-  -ms-transition: var(--main-transition);
-  -o-transition: var(--main-transition);
-  animation: typing 3.5s steps(40, end) alternate infinite;
-  -webkit-animation: typing 3.5s steps(40, end) alternate infinite;
-}
-
-.home .infoContainer .heading::after {
-  content: "";
-  width: 3px;
-  height: 100%;
-  background-color: var(--color-grey-500);
-  position: absolute;
-  top: 0;
-  transition: var(--main-transition);
-  -webkit-transition: var(--main-transition);
-  -moz-transition: var(--main-transition);
-  -ms-transition: var(--main-transition);
-  -o-transition: var(--main-transition);
-  animation:
-    typingCursor 3.5s steps(40, end) alternate infinite,
-    blink-caret 0.5s step-end infinite;
-  -webkit-animation:
-    typingCursor 3.5s steps(40, end) alternate infinite,
-    blink-caret 0.5s step-end infinite;
 }
 
 .home .infoContainer .jobTitle {
@@ -109,7 +73,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   position: relative;
 }
 
