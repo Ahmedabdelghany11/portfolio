@@ -25,7 +25,7 @@ function Home() {
             : "Ahmed Abd El-Ghany"
         );
       },
-      scrambleText === "Ahmed Abd El-Ghany" ? 8000 : 5000
+      scrambleText === "Ahmed Abd El-Ghany" ? 5000 : 8000
     );
 
     return () => clearInterval(interval);
